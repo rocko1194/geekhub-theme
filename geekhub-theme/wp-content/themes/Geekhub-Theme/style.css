@@ -1,0 +1,406 @@
+/*
+Theme Name: Geekhub
+Author: Andrew Leleko
+Author URI: http://geekhub.ck.ua/
+Description: This is default Wordpress theme for GeekHub website.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: geekhub
+*/
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:13px Arial, sans-serif; background:#fff; color:#4c7689; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+    padding:0;
+    margin:0;
+    outline:none;
+    list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:hover                        { text-decoration:none; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header-wrapper{
+    background: url(images/team-header-background.png) repeat-x;
+}
+#header{
+    margin: 0 auto;
+    width: 900px;
+    height: 108px;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 900px;
+}
+#header h1{
+    margin-top: 19px;
+    overflow: hidden;
+    float: left;
+    height: 71px;
+    width: 167px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER-Home-Page-----------------------------*/
+/*----------------------------------------------------------------------------------*/
+.home .header-wrapper {
+    background: url(images/header-bottom-shadow.png) bottom repeat-x, url(images/header-background.png) repeat-x;
+}
+.home #header {
+    margin: 0 auto;
+    width: 900px;
+    height: 450px;
+    background: url(images/registration-header-bg.png) 225px 148px no-repeat;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 900px;
+}
+#header h1 {
+    margin: 19px 0 17px 0;
+    overflow: hidden;
+    float: left;
+    height: 71px;
+    width: 167px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#nav {
+    padding-top: 47px;
+    overflow: hidden;
+    float: right;
+}
+#nav li {
+    float:left;
+    margin-left: 28px;
+}
+#nav li a {
+    font: bold 15px 'PT Sans';
+    text-transform: uppercase;
+    color: #396375;
+    text-decoration: none;
+}
+#nav li a:hover, #nav li a:active, #nav .current-menu-item a {
+    color: #E11D5C;
+}
+.social-nav {
+    padding: 45px 0 0 94px;
+    overflow: hidden;
+    text-align: center;
+}
+.social-nav li {
+    float: left;
+    height: 23px;
+    width: 23px;
+    margin-right: 9px;
+    border-radius: 23px 23px;
+    background-color: rgba(119,152,166,.4);
+}
+.social-nav li a {
+    display: block;
+    color: transparent;
+    height: 23px;
+    width: 23px;
+    background: url(images/social-icons-sprite.png) no-repeat;
+}
+.social-nav li a:hover, .social-nav li a:active,.social-nav li.active a {
+    border-radius: 23px 23px;
+    background-color: rgb(119,152,166);
+}
+.social-nav li.fb a {
+    background-position: 7px 6px;
+}
+.social-nav li.vk a {
+    background-position: -24px 6px;
+}
+.social-nav li.tw a {
+    background-position: -56px 6px;
+}
+.social-nav li.yt a {
+    background-position: -88px 6px;
+}
+.social-nav li.vimeo a {
+    background-position: -120px 6px;
+}
+#header h2 {
+    clear:both;
+    padding: 63px 0 0 13px;
+    text-align: center;
+    border-top: 1px solid #8ea8b3;
+    font: 55px "Trebuchet MS", sans-serif;
+    color: #256988;
+    text-shadow: 0 2px 0 rgba(255, 255, 255, .4);
+}
+#header .registration {
+    display: block;
+    height: 80px;
+    margin: 17px 0 0 33px;
+    padding: 25px 0 0 314px;
+    font: bold 27px "Trebuchet MS", sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    background: url(images/registration-link-bg.png) 259px 8px no-repeat;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#content {
+    margin-bottom: 35px;
+}
+.description {
+    line-height: 1.5;
+    width: 650px;
+    margin: 37px 0 0 132px;
+    font-size: 14px;
+}
+#content h3 {
+    margin: 27px 0 0 0;
+    text-align: center;
+    font: 19px "Trebuchet MS", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+}
+.courses-list {
+    overflow: hidden;
+    margin: 8px 0 0 0;
+    border-top: 1px solid #8ea8b3;
+}
+.courses-list img {
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    margin-top: 10px;
+    border: 2px dashed #f03178 ;
+    border-radius: 100px;
+}
+.courses-list li {
+    float: left;
+    width: 450px;
+    margin: 17px 0 0 0;
+}
+.courses-list li h4 a{
+    font: 27px "Trebuchet MS", sans-serif;
+    color: #f35891;
+    padding:  0 0 0 20px;
+}
+.courses-list li p {
+    padding: 12px 20px 0 20px;
+    overflow: hidden;
+    line-height: 1.5;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#footer {
+    padding-bottom: 80px;
+    clear: both;
+    font: 11px 'Arial';
+}
+.widgets {
+    overflow: hidden;
+    padding-bottom: 58px;
+    border-bottom: 1px solid #a7c3cf;
+}
+.widgets > li {
+    margin: 0 36px 0 0;
+    float: left;
+}
+.sponsors {
+    width: 273px;
+    margin-right: 0 !important;
+}
+.sponsors h5{
+    margin-top: 13px;
+    padding-bottom: 8px;
+    font: 16px "Trebuchet MS", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 8px;
+    border-bottom: 1px solid #8ea8b3;
+}
+.sponsors ul {
+    margin: 24px 0 0 7px;
+}
+.sponsors li {
+    float: left;
+}
+.sponsors li a {
+    display: block;
+    overflow: hidden;
+    color: transparent;
+    margin: 10px 0 0 33px;
+}
+.sponsors li:first-child a {
+    margin: 0;
+}
+.footer-nav{
+    float: left;
+}
+.footer-nav li{
+    float:left;
+    margin: 15px 14px 0 0;
+}
+.footer-nav li a{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #396375;
+    text-decoration: none;
+}
+.footer-nav li a:hover, .footer-nav li a:active,.footer-nav .current-menu-item a {
+    color: #f95c4e;
+}
+#footer p {
+    margin-top: 15px;
+    overflow: hidden;
+    float:right;
+    color: #a7c3cf;
+}
+/*----------------------------------------------------------------------------------*/
+/*-----------------------------------Team-page--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.page-id-10 {
+    font:15px Arial, sans-serif;
+    color:#4B7589;
+}
+.page-id-10 .page-title{
+    margin: 14px 0 30px -5px;
+    padding-bottom: 10px;
+    font: 55px "PT Sans";
+    color: #4B7589;
+    border-bottom: 1px #A7C3CF solid;
+}
+.page-id-10 .articles li{
+    width: 830px;
+    margin-bottom: 55px;
+}
+.page-id-10 .articles li h3 a{
+    padding-top: 43px;
+    width: 150px;
+    font: 28px "PT Sans";
+    color:#E92777;
+    line-height: 1;
+    display: block;
+}
+.page-id-10 .articles li h3 span{
+    margin-top: 5px;
+    display: block;
+    font: 13px Arial;
+    color: #F2753D;
+}
+.page-id-10 .articles img{
+    border: 2px dashed #4C7689;
+    border-radius: 90px;
+    padding: 8px;
+}
+.page-id-10 .articles p{
+    padding-top: 35px;
+    line-height: 1.3;
+}
+.page-id-10 .odd{
+    margin-left: 55px;
+}
+.page-id-10 .odd h3 {
+    margin-right: 20px;
+    float: left;
+    text-align: right;
+}
+.page-id-10 .odd img{
+    float: left;
+    margin-right: 20px;
+}
+.page-id-10 .odd p{
+    overflow: hidden;
+}
+.page-id-10 .even{
+    margin-left: 15px;
+}
+.page-id-10 .even h3{
+    margin-left: 20px;
+    float: right;
+    text-align: left;
+}
+.page-id-10 .even img{
+    float: right;
+    margin-left: 20px;
+}
+.page-id-10 .even p{
+    overflow: hidden;
+    text-align: right;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------Team-page-nav--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#nav .current-menu-item {
+    padding-bottom: 89px;
+    background: url(images/link_bg.png) no-repeat center;
+}
+.home #nav .current-menu-item {
+    padding-bottom: 0;
+    background: none;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------Team-page-FOOTER-----------------------------*/
+/*----------------------------------------------------------------------------------*/
+.page-id-10 #footer {
+    margin-top: 76px;
+    padding-bottom: 20px;
+    clear: both;
+    border-top: 1px #A7C3CF solid;
+    overflow: hidden;
+}
+.page-id-10 .footer-nav, #footer p {
+    margin-top: 15px;
+}
+.page-id-10 .footer-nav li {
+    float: left;
+    margin-right: 15px;
+    display: inline;
+}
+.page-id-10 .footer-nav li a {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    color: #396375;
+}
+.page-id-10 .footer-nav li a:hover, li.active a {
+    text-decoration: none;
+    color: #E11D5C;
+}
+.page-id-10 .footer-nav .current-menu-item a{
+    text-decoration: none;
+    color: #F85B4E;
+}
+.page-id-10 #footer p {
+    text-align: right;
+    font-size: 11px;
+    color: #A7C3CF;
+}
